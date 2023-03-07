@@ -1,0 +1,13 @@
+<button (click)="addRowToGrid()">add</button>
+
+<ag-grid-angular
+  style="width: 100%; height: 500px;"
+  class="ag-theme-alpine"
+  [columnDefs]="columnDefs"
+  [defaultColDef]="defaultColDef"
+  [autoGroupColumnDef]="autoGroupColumnDef"
+  [groupDisplayType]="groupDisplayType"
+  [animateRows]="true"
+  [rowData]="[]"
+  (gridReady)="onGridReady($event)"
+></ag-grid-angular>
